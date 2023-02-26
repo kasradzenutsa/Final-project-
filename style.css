@@ -52,13 +52,8 @@ justify-content: space-between;
 padding: 80px;
 }
 .software-title{
-width: 514px;
-height: 168px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
+max-width:  514px;
 font-size: 56px;
-line-height: 84px;
 color: #373636;
 }
 .software-paragraph{
@@ -67,16 +62,14 @@ height: 120px;
 }
 .software-text{
 padding-top: 50px;
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 400;
+
 font-size: 24px;
 color: #555151;
 }
 .software-mainphoto {
-display: flex;
-justify-content: center;
-z-index: 1;
+max-width: 1000px;
+margin: 0 auto;
+
 }
 .service-container {
 max-width: 1200px;
@@ -297,28 +290,7 @@ height: 350px;
 display: flex;
 justify-content: space-around;
 }
-@-webkit-keyframes slide_animation {
-0% {left: 0px;}
-10% {left: 0px;}
-20% {left: 1200px;}
-30% {left: 1200px;}
-40% {left: 1200px;}
-50% {right: 1200px;}
-60% {right: 1200px;}
-70% { right: 1200px;}
-80% {left: 1200px;}
-90% {left: 0px;}
-100% {left: 0px;}
-}
-.slide-images{
-margin: 0 0 0 -1200px;
-position: relative;
--webkit-animation-name: slide_animation;
--webkit-animation-duration: 10s;
--webkit-animation-iteration-count: infinite;
--moz-animation-direction: alternate-reverse;
--webkit-animation-play-state: running;
-}
+
 .quality-container {
 max-width: 1200px;
 margin: 0 auto;
@@ -665,4 +637,37 @@ font-weight: 400;
 font-size: 14px;
 line-height: 21px;
 color: #F4F4F4;
+}
+@media (max-width:1024px) {
+    .main-container {
+        width: 100%;
+    }
+    .header-wrapper {
+        display: none;
+
+    }
+    .container-software {
+        width: 100%;
+
+    }
+    .software-title {
+        width: 100%;
+        font-size: 60px;
+        }
+    .software-text {
+        max-width: max-content;
+        
+    }    
+    
+
+    .software-mainphoto {
+        width: 50%;
+    }   
+    .in-main-photo {
+        width: 100%;
+    }
+    .service-container {
+        width: 100%;
+    }
+    
 }
