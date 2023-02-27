@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+<div class="container-sign">
+    <form id="signupForm">
+        <p class="sign-title">Sign in</p>
+        <div class="email-form">
+          <label for="email">Email address:</label>
+          <input type="text" id="email" name="email">
+        
+        </div>
+        <div class="country-form">
+         <label for="country">Country:</label>
+         <select id="country" name="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+        </select>
+        </div>
+      <div class="forms-city-zip">  
+        <div class="city-form">
+         <label for="city">City:</label>
+         <input type="text" id="city" name="city">
+        </div>
+        <div class="zip-form">
+         <label for="zipCode">Zip code:</label>
+         <input type="text" id="zipCode" name="zipCode">
+        </div>
+      </div>
+        
+        <button class="signupButton" type="submit">Sign up now</button>
+       <div class="fb-twitter-forms">
+        <button class="facebookButton" type="button">Sign up with Facebook</button>
+        <button class="twitterButton" type="button">Sign up with Twitter</button>
+      </div>
+    </form>
+ </div>
+    <script>
+        // Get the sign-up buttons
+        var signupButtons = document.querySelectorAll(".signupButton, .facebookButton, .twitterButton");
+        
+        // Add a click event listener to each button
+        signupButtons.forEach(function(button) {
+          button.addEventListener("click", function() {
+            // Change the background color of the sign-up form to black
+            document.getElementById
+     </script>
+    
+</body>
+</html>
