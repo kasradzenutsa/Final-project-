@@ -42,21 +42,23 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <nav class="burger-navigation">
-                    <ul class="menu">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="Signin.html">Sign in</a></li>
-                      <li><a href="#">Weather</a></li>
-                    </ul>
-                    <button class="burger">
-                      <span class="burger__line"></span>
-                      <span class="burger__line"></span>
-                      <span class="burger__line"></span>
-                    </button>
-                  </nav>
-            </div>
-        </div>
+       </div>
+       <div class="mobile-burger" id="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="show-nav" class="mobile-navigation hide">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Signin.html"> Sign in</a>
+            </li>
+        </ul>
+    </nav>
+</div>
     </header>
 </div> 
  <div class="container-software ">
@@ -268,13 +270,13 @@
     </footer>
 
     <script>
-        const burger = document.querySelector('.burger');
-        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById("toggle")
+    const showNav = document.getElementById("show-nav")
 
-        burger.addEventListener('click', () => {
-        burger.classList.toggle('open');
-        menu.classList.toggle('open');
-});
+    toggle.addEventListener('click', () => {
+        showNav.classList.toggle('show')
+        showNav.classList.toggle('hide')
+    })
         
 
 </script>
